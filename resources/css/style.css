@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* universal styles */
+
+body {
+	margin: 0;
+	font-family: "Helvetica", sans-serif;
+	font-size: 22px;
+	color: seashell;
+	background-color: black;
+	text-align: center;
+	
+}
+
+a {
+	color: seashell;
+}
+
+h2,
+h3,
+h4{
+	margin: 0;
+	padding: 10px;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+/* header section */
+
+header {
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	border-bottom: 1px solid seashell;
+	height: 69px;
+	background-color: black;
+	align-items: center;
+}
+
+header img {
+	height: 50px;
+	padding-left: 10px;
+}
+
+nav {
+	text-align: right;
+	flex-grow: 1;
+}
+
+nav span {
+	display: inline-block;
+	padding: 20px 10px;
+}
+
+/* main section */
+
+.main {
+	margin: auto;
+	width: 100%;
+	opacity: .9;
+	padding-top: 69px;
+	
+}
+
+/* mission section */ 
+
+#mission {
+	width: 100%;
+	height: 700px;
+	background-image: url("../images/img-mission-background.webp");
+	padding-top: 70px;
+	background-size: cover;
+	
+}
+
+#mission .content {
+	margin: auto;
+	background-color: black;
+	width: 100%;
+	
+}
+
+/* store section */
+
+#store {
+	width: 75%;
+	height: auto;
+	padding-top: 70px;
+	margin: auto;
+}
+.item {
+	padding: 5px;
+	
+}
+
+.item img {
+	display: block;
+	height: 200px;
+	margin: 10px;
+	
+}
+
+.item span {
+	display: block;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px;
+	
+}
+
+
+/* location section */
+
+.flex-container.locations {
+	padding-top: 5px;
+}
+
+#locations {
+	background-image: url("../images/img-locations-background.webp");
+	background-size: cover;
+	width: 100%;
+	
+	padding-top: 70px;
+	
+}
+
+#locations .flex-container {
+	margin: auto;
+	width: 100%;
+	
+}
+
+.location {
+	padding: 10px;
+	margin: 5px 20px;
+	background-color: black;
+	opacity: 1.0;
+	flex-basis: 280px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+}
+
+/* contact section */
+
+#contact {
+	height: 200px;
+}
+
+/* footer section */
+
+footer {
+	text-align: left;
+	padding-left: 20px;
+}
+
+/* media query begins here */
+
+@media only screen and (max-width: 560px) {
+	/* mobile devices max 560*/
+	nav span {
+		display: block;
+		text-align: center;
+		font-size: 16px;
+		padding: 5px;
+	}
+	header {
+		height: 100px;
+	}
+	#mission {
+		height: 400px;
+	}
+	
+	
+
+	h3 {
+		font-size: 16px;
+	}
+	p {
+		font-size: 12px;
+	}
+	
+}
+
